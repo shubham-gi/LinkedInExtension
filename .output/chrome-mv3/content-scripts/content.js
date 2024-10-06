@@ -25842,16 +25842,16 @@ var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "acce
     return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "App", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "modalPrompt", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "modalChild", ref: modalRef, children: [
       isChatModeOn ? /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "messages", children: messages.map((msg, index) => {
         return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `${msg.type}`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { children: msg.message }, void 0, false, {
-          fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+          fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
           lineNumber: 96,
           columnNumber: 21
         }, this) }, index, false, {
-          fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+          fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
           lineNumber: 95,
           columnNumber: 19
         }, this);
       }) }, void 0, false, {
-        fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+        fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
         lineNumber: 92,
         columnNumber: 13
       }, this) : null,
@@ -25874,7 +25874,7 @@ var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "acce
         void 0,
         false,
         {
-          fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+          fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
           lineNumber: 102,
           columnNumber: 11
         },
@@ -25883,55 +25883,55 @@ var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "acce
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "btnParent", children: [
         isChatModeOn ? /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("button", { id: "insertBtn", onClick: handleInsert, children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("img", { src: dArrow, alt: "", className: "rArrow" }, void 0, false, {
-            fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+            fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
             lineNumber: 119,
             columnNumber: 17
           }, this),
           " Insert"
         ] }, void 0, true, {
-          fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+          fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
           lineNumber: 118,
           columnNumber: 15
         }, this) : null,
         isChatModeOn ? /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("button", { id: "generateBtn", onClick: handleGenerate, children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("img", { src: regenerateIcon, alt: "", className: "rArrow" }, void 0, false, {
-            fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+            fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
             lineNumber: 124,
             columnNumber: 17
           }, this),
           " ",
           "Regenerate"
         ] }, void 0, true, {
-          fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+          fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
           lineNumber: 123,
           columnNumber: 15
         }, this) : /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("button", { id: "generateBtn", onClick: handleGenerate, children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("img", { src: rArrow, alt: "", className: "rArrow" }, void 0, false, {
-            fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+            fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
             lineNumber: 129,
             columnNumber: 17
           }, this),
           " Generate"
         ] }, void 0, true, {
-          fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+          fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
           lineNumber: 128,
           columnNumber: 15
         }, this)
       ] }, void 0, true, {
-        fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+        fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
         lineNumber: 116,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
-      fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+      fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
       lineNumber: 89,
       columnNumber: 9
     }, this) }, void 0, false, {
-      fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+      fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
       lineNumber: 88,
       columnNumber: 7
     }, this) }, void 0, false, {
-      fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/components/Modal.jsx",
+      fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/components/Modal.jsx",
       lineNumber: 87,
       columnNumber: 5
     }, this);
@@ -25975,11 +25975,11 @@ var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "acce
       insertButton();
     }, []);
     return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(jsxDevRuntimeExports.Fragment, { children: isModalOpen && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(Modal, { setisModalOpen, isModalOpen }, void 0, false, {
-      fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/App.jsx",
+      fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/App.jsx",
       lineNumber: 55,
       columnNumber: 9
     }, void 0) }, void 0, false, {
-      fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/App.jsx",
+      fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/App.jsx",
       lineNumber: 53,
       columnNumber: 5
     }, void 0);
@@ -25999,7 +25999,7 @@ var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "acce
           container.append(wrapper);
           const root = client.createRoot(wrapper);
           root.render(/* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(App, {}, void 0, false, {
-            fileName: "C:/Users/dev/Desktop/Assessment/react-content-script-ui/entrypoints/content/index.tsx",
+            fileName: "C:/Users/dev/Desktop/Assessment/LinkedInExtension/entrypoints/content/index.tsx",
             lineNumber: 21,
             columnNumber: 21
           }, this));
