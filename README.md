@@ -1,3 +1,4 @@
+
 ---
 name: LinkedIn Extension with React
 description: This is a simple Chrome extension made using React. It shows a popup (modal) on LinkedIn pages when user focuses on a text box, where users can input some text and generate a response. It then inserts the response directly into the LinkedIn message box.
@@ -13,7 +14,6 @@ Installation: Clone the repository
               3.Click Load unpacked and select the dist/ folder from the project.
 ---
 
-```sh
 npm i
 npm run dev
 ```
