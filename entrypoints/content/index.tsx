@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styles/tailwind.css";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
@@ -14,7 +14,7 @@ export default defineContentScript({
       append: "first",
       onMount: (container) => {
         // Don't mount react app directly on <body>
-        
+
         const wrapper = document.createElement("div");
         container.append(wrapper);
 
