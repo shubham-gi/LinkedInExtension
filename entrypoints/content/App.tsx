@@ -126,7 +126,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const insertButton = () => {
-      
+
       document.addEventListener("focusin", (event: FocusEvent) => {
         const target = event.target as HTMLElement;
 
@@ -153,8 +153,8 @@ const App: React.FC = () => {
             button.id = "customButton"; // Add an ID to prevent duplicates
             button.alt = "Open Modal"; // Added alt attribute for accessibility
             button.style.position = "absolute";
-            button.style.bottom = "10px";
-            button.style.right = "45px";
+            button.style.bottom = "1px";
+            button.style.right = "42px";
             button.style.zIndex = "1000"; // Ensure it's on top
             button.style.padding = "10px"; // LinkedIn blue
             button.style.color = "#fff";
