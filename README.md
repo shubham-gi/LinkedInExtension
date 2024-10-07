@@ -1,11 +1,11 @@
 ---
-name: React Content Script UI
-description: Basic example of using createShadowRootUi with React.
+name: LinkedIn Extension
+description: Generates the messages for the given prompt while messaging in linkedIn.
 apis:
   - createShadowRootUi
 ---
 
 ```sh
-pnpm i
-pnpm dev
+npm i
+npm run dev
 ```
