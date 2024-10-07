@@ -71,10 +71,36 @@ export const insertButton = ({ isModalOpen, setisModalOpen }: insertButtonProps)
             }
         }
     });
+    const button= document.querySelector(".customButton") as HTMLImageElement | null;
+    if(button){
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            setisModalOpen(true);
+            console.log("Modal Opened", isModalOpen);
+        });
+    }
+    document.addEventListener("focusout", (event: FocusEvent) => {
+        const target = event.target as HTMLElement;
+        setTimeout(() => {
+        if (target.classList.contains("msg-form__contenteditable")) {
+            console.log("Message Box Lost Focus");
+            removeButton();
+        }},100);
+    });
 };
 export const removeButton = () => {
     const imgButton = document.querySelector(".customButton") as HTMLImageElement | null;
     if (imgButton) {
         imgButton.remove();
     }
+    //Trying for adding placeholder back when message is empty but not working
+    // const messageElement = document.querySelector(
+    //     ".msg-form__contenteditable"
+    // ) as HTMLDivElement | null;
+    // if (messageElement?.innerText === "") {
+    //     const label = document.querySelector(".msg-form__placeholder") as HTMLDivElement | null;
+    //     if (label) {
+    //         label.setAttribute("data-placeholder", "Write a message…");
+    //     }
+    // }
 }

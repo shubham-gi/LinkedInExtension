@@ -36,8 +36,6 @@ function Modal({ isModalOpen, setisModalOpen }: ModalProps) {
       if (modal && !modal.contains(event.target as Node)) {
         if (isModalOpen) {
           setisModalOpen(false);
-          removeButton();
-
         }
       }
     };
@@ -99,7 +97,6 @@ function Modal({ isModalOpen, setisModalOpen }: ModalProps) {
       if (label) {
         label.removeAttribute("data-placeholder");
       }
-      // removeButton();
     }
   };
 
