@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
 export default defineContentScript({
-  matches: ["https://www.linkedin.com/*/*"],
   
-  cssInjectionMode: "ui",
+  matches: ["https://www.linkedin.com/*/*"],
 
+  cssInjectionMode: "ui",
+  
   async main(ctx) {
     const ui = await createShadowRootUi(ctx, {
       name: "linkedin-extension",
