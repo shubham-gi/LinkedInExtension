@@ -1,9 +1,10 @@
-import "./style.css";
+import "./styles/tailwind.css";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
 export default defineContentScript({
-  matches: ["*://*/*"],
+  matches: ["https://www.linkedin.com/*/*"],
+  
   cssInjectionMode: "ui",
 
   async main(ctx) {
@@ -14,7 +15,7 @@ export default defineContentScript({
       append: "first",
       onMount: (container) => {
         // Don't mount react app directly on <body>
-        
+
         const wrapper = document.createElement("div");
         container.append(wrapper);
 
