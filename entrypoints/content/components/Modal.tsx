@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import rArrow from '../assests/rightArrow.svg';
 import dArrow from '../assests/downArrow.svg'
 import regenerateIcon from '../assests/regenerateIcon.svg';
-
+import { removeButton } from "../utils/utilities";
 interface ModalProps {
   isModalOpen: boolean;
   setisModalOpen: (isOpen: boolean) => void;
@@ -23,18 +23,21 @@ function Modal({ isModalOpen, setisModalOpen }: ModalProps) {
   const modalRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const shadowRoot = document.querySelector("linkedin-extension")?.shadowRoot;
-    const handleClickOutsideModal = (event: MouseEvent) => {
+    const shadowRoot = document.querySelector("linkedin-extension")?.shadowRoot as unknown as EventTarget;;
+    const handleClickOutsideModal = (ev: Event) => {
+      const event = ev as MouseEvent;
       const modal = document.querySelector("linkedin-extension")?.shadowRoot?.querySelector('.modalChild') as HTMLDivElement;
       console.log(modal, event.target);
+      const target = event.target as HTMLElement;
       event.stopPropagation();
-      // const modal = document.querySelector(".modalChild") as HTMLDivElement;
-      if (event?.target?.className == "customButton") {
+      if (target.className == "customButton") {
         return;
       }
       if (modal && !modal.contains(event.target as Node)) {
         if (isModalOpen) {
           setisModalOpen(false);
+          removeButton();
+
         }
       }
     };
@@ -91,11 +94,12 @@ function Modal({ isModalOpen, setisModalOpen }: ModalProps) {
       paragraph.textContent = replyText;
       messageElement.textContent = "";
       messageElement.appendChild(paragraph);
-
+      messageElement.focus();
       const label = document.querySelector(".msg-form__placeholder") as HTMLDivElement | null;
       if (label) {
         label.removeAttribute("data-placeholder");
       }
+      // removeButton();
     }
   };
 
