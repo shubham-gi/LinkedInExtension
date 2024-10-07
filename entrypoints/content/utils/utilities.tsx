@@ -43,7 +43,7 @@ export const insertButton = ({ isModalOpen, setisModalOpen }: insertButtonProps)
             if (messageBox && !document.getElementById("customButton")) {
                 const svgBlob = new Blob([svgData], { type: "image/svg+xml" });
                 const url = URL.createObjectURL(svgBlob);
-                console.log("url", url);
+                // console.log("url", url);
                 console.log("BUTTON INSERTED");
 
                 const button = document.createElement("img");
@@ -66,7 +66,7 @@ export const insertButton = ({ isModalOpen, setisModalOpen }: insertButtonProps)
                 button.addEventListener("click", (e) => {
                     e.preventDefault();
                     setisModalOpen(true);
-                    console.log("Modal Opened", isModalOpen);
+                    // console.log("Modal Opened", isModalOpen);
                 });
             }
         }
@@ -85,7 +85,7 @@ export const insertButton = ({ isModalOpen, setisModalOpen }: insertButtonProps)
         if (target.classList.contains("msg-form__contenteditable")) {
             console.log("Message Box Lost Focus");
             removeButton();
-        }},100);
+        }},300);
     });
 };
 export const removeButton = () => {

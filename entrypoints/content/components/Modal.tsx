@@ -27,7 +27,7 @@ function Modal({ isModalOpen, setisModalOpen }: ModalProps) {
     const handleClickOutsideModal = (ev: Event) => {
       const event = ev as MouseEvent;
       const modal = document.querySelector("linkedin-extension")?.shadowRoot?.querySelector('.modalChild') as HTMLDivElement;
-      console.log(modal, event.target);
+      // console.log(modal, event.target);
       const target = event.target as HTMLElement;
       event.stopPropagation();
       if (target.className == "customButton") {
@@ -109,7 +109,7 @@ function Modal({ isModalOpen, setisModalOpen }: ModalProps) {
               {messages.map((msg, index) => (
 
                 <div className={`${msg.type == "generated" ? " flex justify-start" : " flex justify-end"} w-[100%]`} key={index}>
-                  <p className={`${msg.type == "generated" ? "bg-[#DBEAFE]  text-[#666D80] " : "bg-[#DFE1E7] text-[#666D80] "} p-[10px] max-w-[320px] rounded-[10px] my-[10px] `}>{msg.message}</p>
+                  <p className={`${msg.type == "generated" ? "bg-[#DBEAFE]  text-[#666D80] " : "bg-[#DFE1E7] text-[#666D80] "} p-[10px] max-w-[320px] rounded-[10px] my-[5px] `}>{msg.message}</p>
                 </div>
               ))}
             </div>
